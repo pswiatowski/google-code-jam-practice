@@ -15,13 +15,6 @@ public class BathroomStalls {
             long numberOfStalls = in.nextLong();
             long numberOfPeople = in.nextLong();
 
-//            int d = Long.toBinaryString(numberOfPeople).length() - 1;
-//            long prev = (numberOfStalls - numberOfPeople + Long.highestOneBit(numberOfPeople)) >> d;
-//
-//            long max1 = prev / 2;
-//            long min1 = (prev - 1) / 2;
-
-
             long highestOneBit = Long.highestOneBit(numberOfPeople);
             long numberOfStallsInTheLastTreeLevel = numberOfStalls / highestOneBit;
 
@@ -37,3 +30,9 @@ public class BathroomStalls {
         }
     }
 }
+
+//            int d = Long.toBinaryString(numberOfPeople).length() - 1;
+//            long prev = (numberOfStalls - numberOfPeople + Long.highestOneBit(numberOfPeople)) >> d;
+//
+//            long max1 = prev / 2;
+//            long min1 = (prev - 1) / 2;

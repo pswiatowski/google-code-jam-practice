@@ -69,6 +69,8 @@ public class AlphabetCake {
                 }
             }
 
+
+
             System.out.println("Case #" + i + ": ");
 
             for (int j = 0; j < row; j++) {
@@ -77,6 +79,7 @@ public class AlphabetCake {
                 }
                 System.out.println();
             }
+
         }
     }
 }

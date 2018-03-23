@@ -23,10 +23,10 @@ public class Pancake {
             char[] chars = pancake.toCharArray();
 
             for (int j = 0; j <= chars.length - panSize; j++) {
-                if (String.valueOf(chars[j]).equals("-")) {
-                    // update
-                    for (int m = j; m < j + panSize; m++) {
 
+                if (chars[j] == '-') {
+
+                    for (int m = j; m < j + panSize; m++) {
                         if (String.valueOf(chars[m]).equals("-")) {
                             chars[m] = '+';
                         } else {
@@ -39,9 +39,8 @@ public class Pancake {
 
             solution = String.valueOf(counter);
 
-            //verify the leftovers
             for (int j = (chars.length - panSize); j < chars.length; j++) {
-                if (String.valueOf(chars[j]).equals("-")) {
+                if (chars[j] == '-') {
                     solution = "IMPOSSIBLE";
                     break;
                 }

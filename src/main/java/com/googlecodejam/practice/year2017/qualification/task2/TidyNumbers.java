@@ -16,7 +16,6 @@ public class TidyNumbers {
             String number = in.next();
             char[] chars = number.toCharArray();
 
-
             int indexToUpdate = -1;
 
             for (int j = chars.length - 1; j > 0; j--) {
@@ -29,7 +28,6 @@ public class TidyNumbers {
             }
 
             if (indexToUpdate != -1) {
-                // update from index
                 for (int j = indexToUpdate; j < chars.length; j++) {
                     chars[j] = '9';
                 }
