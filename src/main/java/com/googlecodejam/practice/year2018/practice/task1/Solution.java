@@ -2,6 +2,8 @@ package com.googlecodejam.practice.year2018.practice.task1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Scanner;
 
 /**
@@ -15,20 +17,27 @@ public class Solution {
   private static String WRONG_ANSWER = "WRONG_ANSWER";
 
   public static void main(String[] args) {
-    Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
-    int t = in.nextInt();
+    Queue<Integer> attacks = new PriorityQueue<>((x, y) -> (x > y) ? -1 : ((x == y) ? 0 : 1));
+    attacks.add(2);
+    attacks.add(4);
+    attacks.add(2);
+    attacks.add(4);
 
-    for (int i = 1; i <= t; ++i) {
-
-      int A = in.nextInt();
-      int B = in.nextInt();
-      int N = in.nextInt();
-
-      int current = A + (int) Math.ceil((double) (B - A) / 2);
-      function(current, A, B, in, N);
-    }
-
-    System.exit(0);
+    System.out.println(attacks);
+//    Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+//    int t = in.nextInt();
+//
+//    for (int i = 1; i <= t; ++i) {
+//
+//      int A = in.nextInt();
+//      int B = in.nextInt();
+//      int N = in.nextInt();
+//
+//      int current = A + (int) Math.ceil((double) (B - A) / 2);
+//      function(current, A, B, in, N);
+//    }
+//
+//    System.exit(0);
   }
 
   private static void function(int current, int A, int B, Scanner in, int N) {
