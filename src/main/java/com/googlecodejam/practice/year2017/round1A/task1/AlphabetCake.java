@@ -1,4 +1,4 @@
-package com.googlecodejam.practice.year2017.round1A;
+package com.googlecodejam.practice.year2017.round1A.task1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

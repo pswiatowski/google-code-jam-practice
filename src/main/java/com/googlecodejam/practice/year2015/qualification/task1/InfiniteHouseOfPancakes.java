@@ -30,9 +30,7 @@ public class InfiniteHouseOfPancakes {
                 pancakes[j] = in.nextInt();
             }
 
-            int min = 9; // data set max value
-            // complexity space: O(n)
-            // complexity time: O(n)
+            int min = 9;
             for (int j = 1; j <= 9; j++) {
 
                 int cut = 0;
